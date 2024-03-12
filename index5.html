@@ -4,12 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
     <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="BS/css/bootstrap.min.css">
+    
     <script>
         src="https://kit.fontawesome.com/0e53af926d.js"
         crossorigin="anonymous"
+        
     </script>
 </head>
 <body>
+
+    
     <!-- header section -->
   <header>
     <div id="header">
@@ -351,6 +357,27 @@
     </div>
     </section>
 </main>
+
+ <!-- contact us section -->
+ <div class="container mt-5">
+    <div class="card">
+        <div class="card-header"><h2>Contact Us</h2></div>
+           <div class="card-body">
+            <form action="">
+                <div class="row">
+                     <div class="col-6">
+                          <label for="">Email</label>
+                          <input class="form-control" type="text">
+                     </div>
+                     <div class="col-6">
+                      <label for="">Facebook</label>
+                      <input class="form-control" type="text">
+                 </div>
+                </div>
+            </form>
+              </div>
+    </div>
+   </div>
 <!-- footer section -->
 <footer>
     <div id="footer">
@@ -403,6 +430,11 @@
         <img src="images/pay/pay.png" alt="">
         </div>
     </div>
+    <div id="time"></div>
 </footer>
+<script>
+    let time = new Date();
+    document.getElementById('time').innerHTML = time;
+</script>
 </body>
 </html>

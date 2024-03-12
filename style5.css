@@ -1,3 +1,8 @@
+:root{
+    --heading:red;
+    --tcolor:#088178;
+}
+
 /* global styles */
 *{
     margin: 0;
@@ -8,16 +13,16 @@
 h1 {
     font-size: 50px;
     line-height: 64px;
-    color: #222;
+    color:var(--heading) !important;
 }
 h2 {
     font-size: 46px;
     line-height: 54px;
-    color: #222;
+    color:var(--heading) !important;
 }
 h4 {
     font-size: 20px;
-    color: #222;
+    color:var(--heading) !important;
 }
 h6 {
     font-weight: 700;
@@ -47,8 +52,8 @@ button.normal{
     transition: 0.2s;
 }
 button.normal:hover{
-    background-color: #088178;
-    color: #fff;
+    background-color: var(--tcolor)
+    color #fff;
 }
 body{
     width: 100%;
@@ -89,8 +94,9 @@ body{
 }
 .header-list-nav ul a:hover,
 .header-list-nav a.active {
-    color: #088178;
+    color: var(--tcolor);
     content: "";
+    
 }
 .header-list-icon a{
     color: #1a1a1a;
@@ -99,14 +105,14 @@ body{
 }
 .header-list-icon a:hover,
 .header-list-nav ul a.active{
-    color: #088178;
+    color: var(--tcolor);
 }
 .header-list-nav ul li a:hover::after,
 .header-list-nav ul li a.active::after{
     content: "";
     width: 30%;
     height: 2px;
-    background: #088178;
+    background-color:var(--tcolor);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -132,7 +138,7 @@ body{
     font-size: 70px;
 }
 #hero h1{
-    color: #088178;
+    color: var(--tcolor);
     font-size: 70px;
 }
 #hero button{
@@ -146,7 +152,7 @@ body{
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    color: #088178;
+    color: var(--tcolor);
     padding: 14px 65px 14px 65px;
 }
 /* features section styles */
@@ -178,7 +184,7 @@ body{
     line-height: 1;
     font-size: 14px;
     border-radius: 4px;
-    color: #088178;
+    color: var(--tcolor);
     background-color: #fddde4;
 }
 #features .f-box:nth-child(2) h6{
@@ -238,11 +244,11 @@ body{
     padding: 6px 0;
 }
 .product-section .product-cart .price {
-    color: #088178;
+    color: var(--tcolor);
     padding: 4px 0;
 }
 .product-section .product-cart .buy-icon {
-    color: #088178;
+    color: var(--tcolor);
     background-color: #c7e9e75e;
     padding: 15px;
     border-radius: 50px;
@@ -310,8 +316,8 @@ in featured products section
     transition: 0.3s ease;
  }
  #banners .big-banners div:hover button {
-    background-color: #088178;
-    border: 1px solid #088178;
+    background-color: var(--tcolor);
+    border: 1px solid var(--tcolor);
  }
  #banners .big-banners-1 {
     background-image: url(images/banner/b17.jpg);
@@ -391,13 +397,16 @@ in featured products section
     padding: 20px;
     border: none;
     width: 120px;
-    background-color: #088178;
+    background-color: var(--tcolor);
     color: white;
     font-size: 17px;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
 }
 /* footer section styles */
+footer{
+    margin-top: 20px;
+}
 #footer{
     display: flex;
     align-items: flex-start;
@@ -410,7 +419,7 @@ in featured products section
      text-decoration: none;
 }
 #footer a:hover{
-    color: #088178;
+    color: var(--tcolor);
 }
 .about a{
     display: block;
@@ -423,4 +432,8 @@ in featured products section
 .download img{
     border: 1px solid #08817969;
     border-radius: 7px;
+}
+#time{
+    background-color: #ececec;
+    text-align: center;
 }
